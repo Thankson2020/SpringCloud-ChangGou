@@ -1,11 +1,11 @@
 package com.thankson.common.component.canal.client.core;
 
 import com.alibaba.otter.canal.client.CanalConnector;
-import com.thankson.springcloud.common.components.canal.annotation.ListenPoint;
-import com.thankson.springcloud.common.components.canal.client.abstracts.AbstractCanalClient;
-import com.thankson.springcloud.common.components.canal.client.interfaces.CanalEventListener;
-import com.thankson.springcloud.common.components.canal.config.CanalConfig;
-import com.thankson.springcloud.common.components.canal.util.BeanUtil;
+import com.thankson.common.component.canal.annotation.ListenPoint;
+import com.thankson.common.component.canal.client.abstracts.AbstractCanalClient;
+import com.thankson.common.component.canal.client.interfaces.CanalEventListener;
+import com.thankson.common.component.canal.config.CanalConfig;
+import com.thankson.common.component.canal.util.BeanUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.AnnotatedElementUtils;
@@ -84,7 +84,7 @@ public class SimpleCanalClient extends AbstractCanalClient {
         }
 
         //若是你喜欢通过注解的方式去监听的话。。
-        Map<String, Object> listenerMap = BeanUtil.getBeansWithAnnotation(com.thankson.springcloud.common.components.canal.annotation.CanalEventListener.class);
+        Map<String, Object> listenerMap = BeanUtil.getBeansWithAnnotation(com.thankson.common.component.canal.annotation.CanalEventListener.class);
         //也放入 map
         if (listenerMap != null) {
             logger.info("通过注解方式进行监听...");

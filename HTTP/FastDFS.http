@@ -1,0 +1,19 @@
+### 上传文件
+POST http://localhost:9000/file/uploadFile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="aaa.png"
+
+< C:\Users\69303\Desktop\QQ浏览器截图20200503021921.png
+--WebAppBoundary
+Content-Disposition: form-data; name="fileMessage"
+Content-Type: application/json
+
+{
+"author":"aaa",
+"fileType": "1",
+"description":"description",
+"sysFlag":"test"
+}
+--WebAppBoundary--

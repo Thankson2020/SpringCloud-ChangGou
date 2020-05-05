@@ -10,6 +10,40 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>thanksong-springcloud-provider</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>thankson-provider-fastdfs</module>
+    </modules>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.thankson.springcloud</groupId>
+            <artifactId>thankson-common-component</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!--eureka客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!--fastJSON-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -1,6 +1,7 @@
 package com.thankson.common.util.business;
 
-import com.thankson.springcloud.common.constant.StatusCode;
+
+import com.thankson.common.util.constant.StatusCode;
 
 /**
  * 返回结果实体类

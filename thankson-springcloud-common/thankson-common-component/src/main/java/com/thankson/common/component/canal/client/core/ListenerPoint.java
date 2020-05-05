@@ -1,6 +1,6 @@
 package com.thankson.common.component.canal.client.core;
 
-import com.thankson.springcloud.common.components.canal.annotation.ListenPoint;
+import com.thankson.common.component.canal.annotation.ListenPoint;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

@@ -1,0 +1,41 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: FastDFS
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.xiexun.top:3306/changgou_sys?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+fdfs:
+  # 读取时间
+  so-timeout: 1000
+  # 连接超时时间
+  connect-timeout: 60
+  # 缩略图
+  thumbImage:
+    # 宽
+    width: 150
+    # 高
+    height: 150
+  # tracker列表
+  tracker-list:            #TrackerList参数,支持多个
+    - www.xiexun.top:22122
+
+com:
+  thankson:
+    springcloud:
+      FastDFS:
+        pathPrefix: www.xiexun.top:9000

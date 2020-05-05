@@ -1,8 +1,8 @@
 package com.thankson.common.component.canal.client.interfaces;
 
 import com.alibaba.otter.canal.client.CanalConnector;
-import com.thankson.springcloud.common.components.canal.client.core.ListenerPoint;
-import com.thankson.springcloud.common.components.canal.config.CanalConfig;
+import com.thankson.common.component.canal.client.core.ListenerPoint;
+import com.thankson.common.component.canal.config.CanalConfig;
 
 import java.util.List;
 import java.util.Map;

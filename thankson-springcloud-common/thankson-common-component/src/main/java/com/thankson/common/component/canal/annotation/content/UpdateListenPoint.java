@@ -1,7 +1,7 @@
 package com.thankson.common.component.canal.annotation.content;
 
 import com.alibaba.otter.canal.protocol.CanalEntry;
-import com.thankson.springcloud.common.components.canal.annotation.ListenPoint;
+import com.thankson.common.component.canal.annotation.ListenPoint;
 import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.Documented;

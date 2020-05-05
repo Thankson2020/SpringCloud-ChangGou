@@ -1,9 +1,9 @@
 package com.thankson.common.component.canal.config;
 
 
-import com.thankson.springcloud.common.components.canal.client.core.SimpleCanalClient;
-import com.thankson.springcloud.common.components.canal.client.interfaces.CanalClient;
-import com.thankson.springcloud.common.components.canal.util.BeanUtil;
+import com.thankson.common.component.canal.client.core.SimpleCanalClient;
+import com.thankson.common.component.canal.client.interfaces.CanalClient;
+import com.thankson.common.component.canal.util.BeanUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,10 +3,10 @@ package com.thankson.common.component.canal.client.abstracts;
 import com.alibaba.otter.canal.client.CanalConnector;
 import com.alibaba.otter.canal.protocol.Message;
 import com.alibaba.otter.canal.protocol.exception.CanalClientException;
-import com.thankson.springcloud.common.components.canal.client.core.ListenerPoint;
-import com.thankson.springcloud.common.components.canal.client.interfaces.CanalEventListener;
-import com.thankson.springcloud.common.components.canal.client.interfaces.MessageTransponder;
-import com.thankson.springcloud.common.components.canal.config.CanalConfig;
+import com.thankson.common.component.canal.client.core.ListenerPoint;
+import com.thankson.common.component.canal.client.interfaces.CanalEventListener;
+import com.thankson.common.component.canal.client.interfaces.MessageTransponder;
+import com.thankson.common.component.canal.config.CanalConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

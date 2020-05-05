@@ -1,7 +1,7 @@
 package com.thankson.common.component.canal.client.abstracts.option.table;
 
 import com.alibaba.otter.canal.protocol.CanalEntry;
-import com.thankson.springcloud.common.components.canal.client.abstracts.option.AbstractDBOption;
+import com.thankson.common.component.canal.client.abstracts.option.AbstractDBOption;
 
 /**
  * 刪除索引操作

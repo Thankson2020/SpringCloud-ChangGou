@@ -1,7 +1,7 @@
 package com.thankson.common.component.canal.annotation;
 
-import com.thankson.springcloud.common.components.canal.config.CanalClientConfiguration;
-import com.thankson.springcloud.common.components.canal.config.CanalConfig;
+import com.thankson.common.component.canal.config.CanalClientConfiguration;
+import com.thankson.common.component.canal.config.CanalConfig;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Documented;

@@ -18,12 +18,6 @@
             <artifactId>thankson-common-util</artifactId>
             <version>1.0.0</version>
         </dependency>
-        <!--FastDFS文件管理-->
-        <dependency>
-            <groupId>net.oschina.zcx7878</groupId>
-            <artifactId>fastdfs-client-java</artifactId>
-            <version>1.27.0.0</version>
-        </dependency>
 
         <!--canal客户端-->
         <dependency>

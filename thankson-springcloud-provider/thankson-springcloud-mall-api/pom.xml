@@ -3,20 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>thanksong-springcloud-provider</artifactId>
+        <artifactId>thankson-springcloud-provider</artifactId>
         <groupId>com.thankson.springcloud</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>thankson-provider-fastdfs</artifactId>
+    <artifactId>thankson-springcloud-mall-api</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>thankson-springcloud-mall-api-goods</module>
+    </modules>
 
     <dependencies>
-        <!--FastFDS-->
         <dependency>
-            <groupId>com.github.tobato</groupId>
-            <artifactId>fastdfs-client</artifactId>
-            <version>1.27.2</version>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>${persistence.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+
 </project>

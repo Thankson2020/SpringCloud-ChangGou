@@ -3,6 +3,7 @@ package com.thankson.common.util.utils;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 转换工具类
@@ -29,7 +30,7 @@ public class ConvertUtils {
         }
         outSteam.close();
         inputStream.close();
-        String result = new String(outSteam.toByteArray(), "utf-8");
+        String result = new String(outSteam.toByteArray(), StandardCharsets.UTF_8);
         return result;
     }
 }

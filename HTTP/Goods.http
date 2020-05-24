@@ -1,0 +1,7 @@
+### Album
+POST http://localhost:10101/album/search/0/10
+Content-Type: application/json
+
+{
+"title": "测试相册2"
+}

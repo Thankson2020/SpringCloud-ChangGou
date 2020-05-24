@@ -27,7 +27,7 @@ public class SimpleCanalClient extends AbstractCanalClient {
     /**
      * 声明一个线程池
      */
-    private ThreadPoolExecutor executor;
+    private final ThreadPoolExecutor executor;
 
     /**
      * 通过实现接口的监听器

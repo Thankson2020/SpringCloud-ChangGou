@@ -1,5 +1,7 @@
 package com.thankson.common.util.utils;
 
+import org.springframework.stereotype.Component;
+
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
@@ -22,6 +24,7 @@ import java.net.NetworkInterface;
  *
  * @author Thankson
  */
+@Component
 public class IdWorker {
 
     /**

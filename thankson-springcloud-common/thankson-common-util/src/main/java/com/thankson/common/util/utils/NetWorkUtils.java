@@ -120,7 +120,7 @@ public class NetWorkUtils {
                     for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements(); ) {
                         InetAddress inetAddress = enumIpAddr.nextElement();
                         if (!inetAddress.isLoopbackAddress()) {
-                            String ipAddress = inetAddress.getHostAddress().toString();
+                            String ipAddress = inetAddress.getHostAddress();
                             if (!ipAddress.contains("::") && !ipAddress.contains("0:0:")
                                     && !ipAddress.contains("fe80")) {
                                 ip = ipAddress;

@@ -1,0 +1,27 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: changgou-canal
+  redis:
+    host: 39.105.162.100
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+
+#canal配置
+canal:
+  client:
+    instances:
+      example:
+        host: 39.105.162.100
+        port: 11111
+        clusterEnabled: false
+        retryCount: 5

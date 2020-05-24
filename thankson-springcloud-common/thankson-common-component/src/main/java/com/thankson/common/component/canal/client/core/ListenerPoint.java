@@ -13,7 +13,7 @@ public class ListenerPoint {
     /**
      * 目标
      */
-    private Object target;
+    private final Object target;
 
     /**
      * 监听的方法和节点

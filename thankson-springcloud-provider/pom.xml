@@ -15,6 +15,7 @@
         <module>thankson-springcloud-fastdfs</module>
         <module>thankson-springcloud-mall-api</module>
         <module>thankson-springcloud-mall-service</module>
+        <module>thankson-springcloud-canal</module>
     </modules>
 
     <dependencies>

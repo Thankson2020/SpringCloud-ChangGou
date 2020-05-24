@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>thankson-springcloud-mall-api-goods</module>
+        <module>thankson-springcloud-mall-api-advert</module>
     </modules>
 
     <dependencies>

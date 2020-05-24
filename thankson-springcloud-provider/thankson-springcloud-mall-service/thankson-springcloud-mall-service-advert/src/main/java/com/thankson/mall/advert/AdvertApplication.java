@@ -1,20 +1,18 @@
-package com.thankson.mall.goods;
+package com.thankson.mall.advert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.ComponentScan;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan(basePackages = {"com.thankson.mall.goods.dao"})
-@ComponentScan(value = {"com.thankson.common.util","com.thankson.mall.goods"})
-public class GoodsApplication {
+@MapperScan(basePackages = {"com.thankson.mall.advert.dao"})
+@EnableFeignClients
+public class AdvertApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GoodsApplication.class, args);
+        SpringApplication.run(AdvertApplication.class);
     }
-
 }

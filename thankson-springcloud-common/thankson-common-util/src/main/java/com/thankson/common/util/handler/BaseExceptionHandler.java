@@ -23,7 +23,7 @@ import java.util.Objects;
 @RestControllerAdvice
 public class BaseExceptionHandler {
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public Result<Object> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
